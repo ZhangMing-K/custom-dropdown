@@ -14,7 +14,7 @@ function App() {
 					<SingleDropdown />
 				</div>
 				<div>
-					<div>Single dropdown test multiple = true</div>
+					<div>Multiple dropdown test multiple = true</div>
 					<MultipleDropdown />
 				</div>
 			</header>
