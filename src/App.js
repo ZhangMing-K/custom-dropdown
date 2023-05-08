@@ -9,11 +9,11 @@ function App() {
 	return (
 		<div className='App'>
 			<header className='App-header'>
-				<div>
+				<div className='App-header-separator'>
 					<div>Single dropdown test multiple = false</div>
 					<SingleDropdown />
 				</div>
-				<div>
+				<div className='App-header-separator'>
 					<div>Multiple dropdown test multiple = true</div>
 					<MultipleDropdown />
 				</div>
