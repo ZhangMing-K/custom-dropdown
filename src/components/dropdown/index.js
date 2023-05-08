@@ -49,7 +49,7 @@ const SearchableDropdown = ({ options, onSelect }) => {
 
 	return (
 		<div className='searchable-dropdown' ref={dropdownRef}>
-			<div class='inputWithButton'>
+			<div className='inputWithButton'>
 				<input
 					type='text'
 					placeholder='Search...'

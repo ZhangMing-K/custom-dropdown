@@ -14,7 +14,7 @@ function App() {
 	return (
 		<div className='App'>
 			<header className='App-header'>
-				<h12>My custom dropdown component</h12>
+				<div>My custom dropdown component</div>
 				<SelectableDropdown
 					options={options}
 					label={'Select an option'}
