@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import SelectableDropdown from './components/dropdown';
 import { useState } from 'react';
+import SingleDropdown from './pages/singleDropdown';
+import MultipleDropdown from './pages/multipleDropdown';
 
 function App() {
 	const options = ['option1', 'option2', 'option3', 'test1', 'test2', 'test3'];
@@ -14,15 +16,18 @@ function App() {
 	return (
 		<div className='App'>
 			<header className='App-header'>
-				<SelectableDropdown
+				{/* <SelectableDropdown
 					options={options}
 					label={'Select an option'}
 					onSelect={handleOptionClick}
+					multiple
 				/>
 				<div>
-					Selected option is : &nbsp;
-					{selectedOption ? selectedOption : 'No option '}
-				</div>
+					Selected options  : &nbsp;
+					{selectedOption ? selectedOption.join(',') : 'No option '}
+				</div> */}
+				<SingleDropdown />
+				<MultipleDropdown />
 			</header>
 		</div>
 	);

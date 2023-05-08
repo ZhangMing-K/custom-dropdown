@@ -1,9 +1,15 @@
 .searchable-dropdown {
     position: relative;
     display: inline-block;
-    width: 400px;
   }
   
+  .inputWithButton {
+    border: 1px solid #ccc;
+    display: flex;
+    width: 400px;
+    flex-wrap: wrap;
+  }
+
   .inputWithButton .close-container {
     position: absolute;
     right: 0;
@@ -13,19 +19,54 @@
     align-items: center;
   }
 
+  .inputWithButton .added-items {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .added-item-container {
+    display: flex;
+    align-items: center;
+    margin-right: -25px;
+  }
+
+  .btn-added-item {
+    padding-right: 30px;
+    margin-left: 4px;
+    margin-top: 4px;
+  }
+
+  .added-btn-cancel {
+    position: relative;
+    right: 28px;
+    background-color: transparent;
+    border: none;
+  }
+
+  .input-wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
   .btn-cancel {
     border: none ;
     background-color: transparent;
     cursor: pointer;
   }
-  
+
   .searchable-dropdown input {
     padding: 8px 16px;
-    border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
-    width: calc(100% - 32px);
+    border: none !important;
+    flex: 1;
   }
+
+  input:focus {outline:none!important;}
+
   
   .searchable-dropdown ul {
     position: absolute;
