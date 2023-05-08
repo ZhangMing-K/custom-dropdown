@@ -36,7 +36,6 @@ const SearchableDropdown = ({ multiple = false, options, onSelect }) => {
 		if (multiple) {
 			filtered = filtered.filter((option) => !selectedItems.includes(option));
 		}
-		console.log('handle search: ', value, filtered);
 		setSearchTerm(value);
 		setShowOption(true);
 		setFilteredOptions(filtered);
@@ -81,7 +80,7 @@ const SearchableDropdown = ({ multiple = false, options, onSelect }) => {
 				{selectedItems.length > 0 && (
 					<div className='added-items'>
 						{selectedItems.map((selectedItem) => (
-							<div className='added-item-container'>
+							<div className='added-item-container' key={selectedItem}>
 								<button
 									key={selectedItem}
 									className='btn-added-item'
