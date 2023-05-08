@@ -58,13 +58,15 @@ const SearchableDropdown = ({ options, onSelect }) => {
 					onFocus={handleSearch}
 				/>
 				{showOption && (
-					<button
-						className='btn-cancel'
-						onClick={handleCancel}
-						variant='outline-secondary'
-					>
-						❌
-					</button>
+					<div className='close-container'>
+						<button
+							className='btn-cancel'
+							onClick={handleCancel}
+							variant='outline-secondary'
+						>
+							❌
+						</button>
+					</div>
 				)}
 			</div>
 			{showOption && (
