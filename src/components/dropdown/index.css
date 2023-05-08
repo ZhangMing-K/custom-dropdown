@@ -1,0 +1,52 @@
+.searchable-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .inputWithButton .btn-cancel {
+    position: absolute;
+    right: 0;
+    top : 15px;
+    border: none ;
+    background-color: transparent;
+  }
+  
+  .searchable-dropdown input {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .searchable-dropdown ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    margin-top: 4px;
+  }
+  
+  .searchable-dropdown li {
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: left;
+  }
+  
+  .searchable-dropdown li:hover {
+    background-color: #f5f5f5;
+  }
+
+  .option-unavailable {
+    font-size: 12px;
+  }
